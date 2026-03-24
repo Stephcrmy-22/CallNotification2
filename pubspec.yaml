@@ -1,0 +1,33 @@
+name: agora_voice_call
+description: A Flutter project for Agora voice and signaling calls.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Agora SDKs
+  agora_rtc_engine: 6.5.2         # RTC engine (we remove its aosl.xcframework in Podfile)
+  agora_rtm: 2.2.1                # RTM (Signaling) SDK with latest aosl.xcframework
+
+  # Firebase SDKs
+  firebase_core: 2.32.0
+  firebase_messaging: 14.7.10
+
+  # Utilities
+  permission_handler: 11.3.0
+  app_settings: 5.1.1
+  uuid: 4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: 5.0.0
